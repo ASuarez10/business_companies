@@ -9,8 +9,8 @@ public class ServiceC extends Company{
 
   //Constructor
 
-  public ServiceC(String name, String nit, String addres,String phoneN, int qEmployeer, double actives, String inscriptionD, char type, String lRName){
-    super(name, nit, addres, phoneN, qEmployeer, actives, inscriptionD, type, lRName);
+  public ServiceC(String name, String nit, String addres,String phoneN, int qEmployeer, double actives, String inscriptionD, char type, String lRName, Building bu){
+    super(name, nit, addres, phoneN, qEmployeer, actives, inscriptionD, type, lRName, bu);
     sS = new ArrayList<SSurvey>();
   }
 }//Final

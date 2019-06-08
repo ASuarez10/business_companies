@@ -75,7 +75,7 @@ public class Technology extends ServiceC{
   msj += "---------------------------------------------------------------------------------------------------------------------------- \n";
   msj += "El servicio es:" + service;
   msj += "---------------------------------------------------------------------------------------------------------------------------- \n";
-  msj += "Los arboles son:" + calculateTreeXKW();
+  msj += "Los arboles a sembrar son:" + calculateTreeXKW();
 
   return msj;
   }
