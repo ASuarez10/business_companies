@@ -11,6 +11,7 @@ public class Holding{
   //Constructor
   public Holding(Building bl){
   companies = new ArrayList<Company>();
+  this.bl = bl;
   }
 
 }//final

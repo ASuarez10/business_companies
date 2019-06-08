@@ -33,7 +33,7 @@ public abstract  class Company{
     this.inscriptionD = inscriptionD;
     this.type = type;
     this.lRName = lRName;
-    this.build = build;
+    this.bu = bu;
   }
 
   public String getInscriptionD(){
