@@ -21,9 +21,9 @@ public abstract  class Company{
   private String inscriptionD;
   private char type;
   private String lRName;
-  //private Building build;
+  private Building bu;
 
-  public Company(String name, String nit, String addres,String phoneN, int qEmployeer, double actives, String inscriptionD, char type, String lRName){
+  public Company(String name, String nit, String addres,String phoneN, int qEmployeer, double actives, String inscriptionD, char type, String lRName, Building bu){
     this.name = name;
     this.nit = nit;
     this.addres = addres;
@@ -33,7 +33,7 @@ public abstract  class Company{
     this.inscriptionD = inscriptionD;
     this.type = type;
     this.lRName = lRName;
-    //this.build = build;
+    this.build = build;
   }
 
   public String getInscriptionD(){
