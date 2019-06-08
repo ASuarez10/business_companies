@@ -1,4 +1,5 @@
 package model;
+import java.util.ArrayList;
 
 public abstract  class Company{
 
@@ -108,8 +109,14 @@ public abstract  class Company{
     this.lRName = lRName;
   }
 
-  public abstract String toString(){
-
+  public Building getBu(){
+    return bu;
   }
+
+  public void setBu(Building bu){
+    this.bu = bu;
+  }
+
+  public abstract String toString();
 
 }//final

@@ -1,4 +1,5 @@
 package model;
+import java.util.ArrayList;
 
 public class SSurvey{
 
@@ -6,7 +7,7 @@ public class SSurvey{
   private int answerTime;
   private int relationCostXBenefit;
 
-  public Poll(int serviceDoIt,int answerTime,int relationCostXBenefit){
+  public SSurvey(int serviceDoIt,int answerTime,int relationCostXBenefit){
     this.serviceDoIt = serviceDoIt;
     this.answerTime = answerTime;
     this.relationCostXBenefit = relationCostXBenefit;

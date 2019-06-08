@@ -1,4 +1,5 @@
 package model;
+import java.util.ArrayList;
 
 public class Employee{
 
@@ -8,7 +9,7 @@ public class Employee{
   private String email;
   private boolean disponibility;
 
-  public Employeer(String name, String extension, String position, String email, boolean disponibility){
+  public Employee(String name, String extension, String position, String email, boolean disponibility){
 
   this.name = name;
   this.extension = extension;

@@ -1,4 +1,5 @@
 package model;
+import java.util.ArrayList;
 
 public class Building{
 
@@ -13,7 +14,7 @@ public class Building{
   public void initializeMatriz(){
     for(int i = 0; i < cubicles.length; i++){
       for(int j = 0; j < cubicles[0].length; j++){
-        cubicles[i][j] = new Employee("", "23", i + j, "", "", false);
+        cubicles[i][j] = new Employee("", "23" + i + j, "", "", false);
       }
     }
   }
@@ -54,7 +55,7 @@ public class Building{
   boolean abajoL = false;
 
   for(int i = 0;  i < cubicles.length; i++){
-      if(cubicles[i][k].getNameEmployee().equals(nameEmpleado)){
+      if(cubicles[i][k].getName().equals(nameEmpleado)){
 
         msj = "El empleado es" + cubicles[i][k].getExtension();
         }
@@ -63,7 +64,7 @@ public class Building{
 
     if(abajoL == true){
       for(int m = 1; m  < cubicles[0].length; m++){
-        if(cubicles[k][m].getNameEmployee().equals(nameEmpleado)){
+        if(cubicles[k][m].getName().equals(nameEmpleado)){
 
               msj = "El empleado es" + cubicles[k][m].getExtension();
       }
@@ -84,20 +85,20 @@ public class Building{
   String msj = "";
 
   for(int i =0; i < cubicles.length; i++){
-      if(cubicles[0][i].getNameEmployee().equals(nombreEmpleado)){
+      if(cubicles[0][i].getName().equals(nombreEmpleado)){
         msj += "El empleado es" + cubicles[0][i].getExtension();
   }
   }
 
   for(int k = 1; k < cubicles.length;k++){
-        if(cubicles[k][cubicles.length-k].getNameEmployee().equals(nombreEmpleado)){
+        if(cubicles[k][cubicles.length-k].getName().equals(nombreEmpleado)){
             msj += "El empleado es" + cubicles[k][cubicles.length-k].getExtension();
   }
 
   }
 
   for(int j= 1; j < cubicles.length; j++){
-    if(cubicles[cubicles.length-1][j].getNameEmployee().equals(nombreEmpleado)){
+    if(cubicles[cubicles.length-1][j].getName().equals(nombreEmpleado)){
       msj += "El empleado es:" + cubicles[cubicles.length][j].getExtension();
     }
   }
@@ -110,7 +111,7 @@ public class Building{
 
   //Diagonal principal
    for(int i = 0; i < cubicles.length;i++){
-  	 if(cubicles[i][i].getNameEmployee().equals(nombreEmpleado)){
+  	 if(cubicles[i][i].getName().equals(nombreEmpleado)){
   		 msj += "El empleado es:" + cubicles[i][i].getExtension();
   	 }
    }
@@ -118,7 +119,7 @@ public class Building{
   //Diagonal Inversa
     for(int k = 0; k < cubicles.length;k++){
   	if((cubicles.length % 2 == 0) || (cubicles.length % 2 != 0 && k != cubicles.length/2)){
-  		if(cubicles[k][cubicles.length-1-k].getNameEmployee().equals(nombreEmpleado)){
+  		if(cubicles[k][cubicles.length-1-k].getName().equals(nombreEmpleado)){
   			msj += "El empleado es:" + cubicles[k][cubicles.length-1-k].getExtension();
   		}
   	}
@@ -134,21 +135,21 @@ public class Building{
   for(int i = 0; i < cubicles.length;i+= 2){
   	for(int j = 0; j < cubicles.length;j++){
   		if(m % 2 == 0){
-  			if(cubicles[i][j].getNameEmployee().equals(nombreEmpleado)){
+  			if(cubicles[i][j].getName().equals(nombreEmpleado)){
   			msj += "El empleado es:" + cubicles[i][j].getExtension();
   			 }
   			}else if(m % 2 != 0){
-  						if(cubicles[i][cubicles.length-j-1].getNameEmployee().equals(nombreEmpleado)){
+  						if(cubicles[i][cubicles.length-j-1].getName().equals(nombreEmpleado)){
   						msj += "El empleado es:" + cubicles[i][cubicles.length-j-1].getExtension();
   				}
   			}
   		}
   		if(m % 2 == 0 && i < cubicles.length-1){
-  			if(cubicles[i+1][cubicles.length-1].getNameEmployee().equals(nombreEmpleado)){
+  			if(cubicles[i+1][cubicles.length-1].getName().equals(nombreEmpleado)){
   				msj += "El empleado es:" + cubicles[i+1][cubicles.length-1].getExtension();
   			}
   		}else{
-  			if(cubicles[i+1][0].getNameEmployee().equals(nombreEmpleado)){
+  			if(cubicles[i+1][0].getName().equals(nombreEmpleado)){
   				msj += "El empleado es:" + cubicles[i+1][0].getExtension();
   			}
   		}
@@ -161,21 +162,21 @@ public class Building{
   String msj = "";
 
   for(int i = 0; i < cubicles.length;i++){
-    if(cubicles[0][i].getNameEmployee().equals(nombreEmpleado)){
+    if(cubicles[0][i].getName().equals(nombreEmpleado)){
       msj += "El empleado es:" + cubicles[0][i].getExtension();
     }
   }
 
   for(int k = cubicles[0].length-1; k > 0; k--){
-    if(cubicles[cubicles.length][k].getNameEmployee().equals(nombreEmpleado)){
+    if(cubicles[cubicles.length][k].getName().equals(nombreEmpleado)){
       msj += "El empleado es:" + cubicles[cubicles.length][k].getExtension();
     }
   }
 
   for(int o = 0; o < cubicles.length;o++){
-   if(cubicles[o][0].getNameEmployee().equals(nombreEmpleado)){
+   if(cubicles[o][0].getName().equals(nombreEmpleado)){
      msj += "El empleado es:" +cubicles[o][0].getExtension();
-   }else if(cubicles[o][cubicles.length].getNameEmployee().equals(nombreEmpleado)){
+   }else if(cubicles[o][cubicles.length].getName().equals(nombreEmpleado)){
      msj += "El empleado es:" +cubicles[o][cubicles.length].getExtension();
    }
   }

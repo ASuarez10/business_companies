@@ -1,4 +1,5 @@
 package model;
+import java.util.ArrayList;
 
 public class PService extends ServiceC{
 
@@ -10,7 +11,7 @@ public class PService extends ServiceC{
   private int suscriptorsTotally;
   private int suscriptorsOneAndTwo;
 
-  public PublicCompany(String nameComercy,String nit, String addres,String phoneContact, int employeerCant, double amountActives, String dateOfInscription, char typeOrganization, String legalName,Building build,String servicePublic,int suscriptorsTotally, int suscriptorsOneAndTwo){
+  public PService(String nameComercy,String nit, String addres,String phoneContact, int employeerCant, double amountActives, String dateOfInscription, char typeOrganization, String legalName,Building build,String servicePublic,int suscriptorsTotally, int suscriptorsOneAndTwo){
 
   super(nameComercy,nit,addres,phoneContact,employeerCant,amountActives,dateOfInscription,typeOrganization,legalName,build);
   this.servicePublic = servicePublic;

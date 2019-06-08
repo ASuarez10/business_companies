@@ -1,4 +1,5 @@
 package model;
+import java.util.ArrayList;
 
 public class Education extends ServiceC{
 
@@ -15,7 +16,7 @@ public class Education extends ServiceC{
   private int totalAmountActivesStudent;
 
 
-  public EducationsCompany(String nameComercy,String nit, String addres,String phoneContact, int employeerCant, double amountActives, String dateOfInscription, char typeOrganization, String legalName,Building build, String numberRegistrationMEN,int numberYearsAcreditation,int nationalPositionSaber11,int nationalPositionSaberPro,String rectorName,String educativeSector,int amountStudentsStratum1and2, int totalAmountActivesStudent){
+  public Education(String nameComercy,String nit, String addres,String phoneContact, int employeerCant, double amountActives, String dateOfInscription, char typeOrganization, String legalName,Building build, String numberRegistrationMEN,int numberYearsAcreditation,int nationalPositionSaber11,int nationalPositionSaberPro,String rectorName,String educativeSector,int amountStudentsStratum1and2, int totalAmountActivesStudent){
   super(nameComercy,nit,addres,phoneContact,employeerCant,amountActives,dateOfInscription,typeOrganization,legalName,build);
   this.numberRegistrationMEN = numberRegistrationMEN;
   this.numberYearsAcreditation = numberYearsAcreditation;
@@ -91,6 +92,7 @@ public class Education extends ServiceC{
     this.totalAmountActivesStudent = totalAmountActivesStudent;
   }
 
+  
   public String toString(){
   String msj = "";
 

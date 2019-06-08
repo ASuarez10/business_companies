@@ -1,4 +1,5 @@
 package model;
+import java.util.ArrayList;
 
 public class Medicament extends Manufacturing{
 
@@ -13,7 +14,7 @@ public class Medicament extends Manufacturing{
   private String expiration;
   private char modality;
 
-  public Invima(String name, String nit, String addres,String phoneN, int qEmployeer, double actives, String inscriptionD, char type, String lRName, Building bu, String sanitaryRegistration, String state, String expiration, char modality){
+  public Medicament(String name, String nit, String addres,String phoneN, int qEmployeer, double actives, String inscriptionD, char type, String lRName, Building bu, String sanitaryRegistration, String state, String expiration, char modality){
     super(name, nit, addres, phoneN, qEmployeer, actives, inscriptionD, type, lRName, bu);
     this.sanitaryRegistration = sanitaryRegistration;
     this.state = state;

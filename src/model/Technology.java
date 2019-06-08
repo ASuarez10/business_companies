@@ -1,14 +1,15 @@
 package model;
+import java.util.ArrayList;
 
 public class Technology extends ServiceC{
 
   //Constantes
 
-  public static final char C_C = 'A';
-  public static final char S_D = 'B';
-  public static final char I_S = 'C';
-  public static final char S_S = 'D';
-  public static final char P_S = 'E';
+  public static final String C_C = "Consultoria";
+  public static final String S_D = "Desarrollo sofware";
+  public static final String I_S = "Servicio infraestructura";
+  public static final String S_S = "Servicio sofware";
+  public static final String P_S = "Servicio plataforma";
 
   //Atributo
 
@@ -17,9 +18,9 @@ public class Technology extends ServiceC{
 
   //Relaciones
 
-  private ArrayList<char> services;
+  private ArrayList<String> services;
 
-  public TechnologyCompany(String name, String nit, String addres,String phoneN, int qEmployeer, double actives, String inscriptionD, char type, String lRName, Building bu, String service, int killowatts){
+  public Technology(String name, String nit, String addres,String phoneN, int qEmployeer, double actives, String inscriptionD, char type, String lRName, Building bu, String service, int killowatts){
     super(name, nit, addres, phoneN, qEmployeer, actives, inscriptionD, type, lRName, bu);
   	this.service = service;
   	this.killowatts = killowatts;

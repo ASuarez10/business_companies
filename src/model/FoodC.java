@@ -1,4 +1,5 @@
 package model;
+import java.util.ArrayList;
 
 public class FoodC extends Manufacturing{
 
@@ -10,7 +11,7 @@ public class FoodC extends Manufacturing{
   private String maker;
   private String conservation;
 
-  public FoodCompany(String name, String nit, String addres,String phoneN, int qEmployeer, double actives, String inscriptionD, char type, String lRName, Building bu, String importer, String maker, String conservation){
+  public FoodC(String name, String nit, String addres,String phoneN, int qEmployeer, double actives, String inscriptionD, char type, String lRName, Building bu, String importer, String maker, String conservation){
   super(name, nit, addres, phoneN, qEmployeer, actives, inscriptionD, type, lRName, bu);
   this.importer = importer;
   this.maker = maker;
