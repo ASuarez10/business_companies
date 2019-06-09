@@ -20,6 +20,11 @@ public class PService extends ServiceC{
 
   }
 
+  /**
+	* Description This method allows to get the type of service of the company. <br>
+	* <b>post:</b> The type of service of the company is given.
+	* @return The type of service of the company.
+	*/
   public String getServicePublic(){
     return servicePublic;
   }
@@ -28,6 +33,11 @@ public class PService extends ServiceC{
     this.servicePublic = servicePublic;
   }
 
+  /**
+	* Description This method allows to get the amount of subscribers of the company. <br>
+	* <b>post:</b> The amount of subscribers of the company is given.
+	* @return The amount of subscriberse of the company.
+	*/
   public int getSuscriptorsTotally(){
     return suscriptorsTotally;
   }
@@ -36,6 +46,11 @@ public class PService extends ServiceC{
     this.suscriptorsTotally = suscriptorsTotally;
   }
 
+  /**
+	* Description This method allows to get the amount of subscribers in stratum 1 and 2 of the company. <br>
+	* <b>post:</b> The amount of subscribers in stratum 1 and 2 of the company is given.
+	* @return The amount of subscriberse in stratum 1 and 2 of the company.
+	*/
   public int getSuscriptorsOneAndTwo(){
     return suscriptorsOneAndTwo;
   }

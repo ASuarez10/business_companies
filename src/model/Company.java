@@ -37,6 +37,12 @@ public abstract  class Company{
     this.bu = bu;
   }
 
+  /**
+	* Description This method allows to get the inscription date of the company. <br>
+	* <b>post:</b> The inscription date of the company is given.
+	* @return The inscription date.
+	*/
+
   public String getInscriptionD(){
     return inscriptionD;
   }
@@ -45,6 +51,11 @@ public abstract  class Company{
     this.inscriptionD = inscriptionD;
   }
 
+  /**
+	* Description This method allows to get the name of the company. <br>
+	* <b>post:</b> The name of the company is given.
+	* @return The name of the company.
+	*/
   public String getName(){
     return name;
   }
@@ -53,6 +64,11 @@ public abstract  class Company{
     this.name = name;
   }
 
+  /**
+	* Description This method allows to get the nit of the company. <br>
+	* <b>post:</b> The nit of the company is given.
+	* @return The nit of the company.
+	*/
   public String getNit(){
     return nit;
   }
@@ -61,6 +77,11 @@ public abstract  class Company{
     this.nit = nit;
   }
 
+  /**
+	* Description This method allows to get the addres of the company. <br>
+	* <b>post:</b> The addres of the company is given.
+	* @return The addres of the company.
+	*/
   public String getAddres(){
     return addres;
   }
@@ -69,6 +90,11 @@ public abstract  class Company{
     this.addres = addres;
   }
 
+  /**
+	* Description This method allows to get the phone number of the company. <br>
+	* <b>post:</b> The phone number of the company is given.
+	* @return The phone number of the company.
+	*/
   public String getPhoneN(){
     return phoneN;
   }
@@ -77,6 +103,11 @@ public abstract  class Company{
     this.phoneN = phoneN;
   }
 
+  /**
+	* Description This method allows to get the employeer amount of the company. <br>
+	* <b>post:</b> The employeer amount of the company is given.
+	* @return The employeer amount of the company.
+	*/
   public int getQEmployeer(){
     return qEmployeer;
   }
@@ -85,6 +116,11 @@ public abstract  class Company{
     this.qEmployeer = qEmployeer;
   }
 
+  /**
+	* Description This method allows to get the actives of the company. <br>
+	* <b>post:</b> The actives of the company is given.
+	* @return The actives of the company.
+	*/
   public double getActives(){
     return actives;
   }
@@ -93,6 +129,11 @@ public abstract  class Company{
     this.actives = actives;
   }
 
+  /**
+	* Description This method allows to get the type of the company. <br>
+	* <b>post:</b> The type of the company is given.
+	* @return The type of the company.
+	*/
   public char getType(){
     return type;
   }
@@ -101,6 +142,11 @@ public abstract  class Company{
     this.type = type;
   }
 
+  /**
+	* Description This method allows to get the name of the legal representative of the company. <br>
+	* <b>post:</b> The name of the legal representative of the company is given.
+	* @return The name of the legal representative of the company.
+	*/
   public String getLRName(){
     return lRName;
   }
@@ -109,6 +155,11 @@ public abstract  class Company{
     this.lRName = lRName;
   }
 
+  /**
+	* Description This method allows to get all the building. <br>
+	* <b>post:</b> The building is given.
+	* @return The object.
+	*/
   public Building getBu(){
     return bu;
   }

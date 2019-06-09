@@ -32,6 +32,11 @@ public class Technology extends ServiceC{
   	services.add(P_S);
   }
 
+  /**
+	* Description This method allows to get the type of service of the company. <br>
+	* <b>post:</b> The type of service of the company is given.
+	* @return The type of service of the company.
+	*/
   public String getService(){
     return service;
   }
@@ -40,6 +45,11 @@ public class Technology extends ServiceC{
     this.service = service;
   }
 
+  /**
+	* Description This method allows to get the killowatts consumption of the company. <br>
+	* <b>post:</b> The killowatts consumption of the company is given.
+	* @return The killowatts consumption of the company.
+	*/
   public int getKillowatts(){
   	return killowatts;
   }

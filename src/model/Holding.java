@@ -14,6 +14,11 @@ public class Holding{
   this.bl = bl;
   }
 
+  /**
+	* Description This method allows to get all the building. <br>
+	* <b>post:</b> The building is given.
+	* @return The object.
+	*/
   public Building getBl(){
     return bl;
   }

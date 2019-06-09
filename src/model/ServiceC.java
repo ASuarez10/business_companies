@@ -14,6 +14,11 @@ public class ServiceC extends Company{
     sS = new ArrayList<SSurvey>();
   }
 
+  /**
+	* Description This method allows to get all theArrayList. <br>
+	* <b>post:</b> The ArrayList is given.
+	* @return The ArrayList.
+	*/
   public ArrayList<SSurvey> getSS(){
     return sS;
   }
@@ -26,6 +31,11 @@ public class ServiceC extends Company{
     sS = client;
   }
 
+  /**
+	* Description This method allows to get the info of the service surveys. <br>
+	* <b>post:</b> The info of the service surveys is given.
+	* @return The info of the service surveys.
+	*/
   public String getInfor(){
   String msj = "";
 
