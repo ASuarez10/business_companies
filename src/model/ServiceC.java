@@ -15,7 +15,7 @@ public class ServiceC extends Company{
   }
 
   /**
-	* Description This method allows to get all theArrayList. <br>
+	* Description This method allows to get all the ArrayList. <br>
 	* <b>post:</b> The ArrayList is given.
 	* @return The ArrayList.
 	*/
@@ -23,6 +23,11 @@ public class ServiceC extends Company{
     return sS;
   }
 
+  /**
+  * Description This method allows to change all the ArrayList. <br>
+  * <b>post:</b> The Arraylist is changed.
+  * @param The new ArrayList.
+  */
   public void setSS(ArrayList<SSurvey> sS){
     this.sS = sS;
   }

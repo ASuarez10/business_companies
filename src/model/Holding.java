@@ -23,6 +23,11 @@ public class Holding{
     return bl;
   }
 
+  /**
+	* Description This method allows to change the building. <br>
+	* <b>post:</b> The building is changed.
+	* @param The new building.
+	*/
   public void setBl(Building bl){
     this.bl = bl;
   }

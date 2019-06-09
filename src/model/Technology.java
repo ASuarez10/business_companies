@@ -41,6 +41,11 @@ public class Technology extends ServiceC{
     return service;
   }
 
+  /**
+  * Description This method allows to change the service of the company. <br>
+  * <b>post:</b> The service of the company is changed.
+  * @param The new service of the company.
+  */
   public void setService(String service){
     this.service = service;
   }
@@ -54,6 +59,11 @@ public class Technology extends ServiceC{
   	return killowatts;
   }
 
+  /**
+  * Description This method allows to change the killowatts consumption of the company. <br>
+  * <b>post:</b> The killowatts consumption of the company is changed.
+  * @param The new killowatts consumption of the company.
+  */
   public void setKillowatts(int killowatts){
   	this.killowatts = killowatts;
   }

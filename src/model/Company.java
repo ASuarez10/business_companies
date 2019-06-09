@@ -47,6 +47,11 @@ public abstract  class Company{
     return inscriptionD;
   }
 
+  /**
+	* Description This method allows to change the inscription date of the company. <br>
+	* <b>post:</b> The inscription date of the company is changed.
+	* @param The new inscription date of the company.
+	*/
   public void setInscriptionD(String inscriptionD){
     this.inscriptionD = inscriptionD;
   }
@@ -60,6 +65,11 @@ public abstract  class Company{
     return name;
   }
 
+  /**
+	* Description This method allows to change the name of the company. <br>
+	* <b>post:</b> The name of the company is changed.
+	* @param The new name of the company.
+	*/
   public void setName(String name){
     this.name = name;
   }
@@ -73,6 +83,11 @@ public abstract  class Company{
     return nit;
   }
 
+  /**
+	* Description This method allows to change the nit of the company. <br>
+	* <b>post:</b> The nit of the company is changed.
+	* @param The new nit of the company.
+	*/
   public void setNit(String nit){
     this.nit = nit;
   }
@@ -86,6 +101,11 @@ public abstract  class Company{
     return addres;
   }
 
+  /**
+	* Description This method allows to change the addres of the company. <br>
+	* <b>post:</b> The addres of the company is changed.
+	* @param The new addres of the company.
+	*/
   public void setAddres(String addres){
     this.addres = addres;
   }
@@ -99,6 +119,11 @@ public abstract  class Company{
     return phoneN;
   }
 
+  /**
+	* Description This method allows to change the phone number of the company. <br>
+	* <b>post:</b> The phone number of the company is changed.
+	* @param The new phone number of the company.
+	*/
   public void setPhoneN(String phoneN){
     this.phoneN = phoneN;
   }
@@ -112,6 +137,11 @@ public abstract  class Company{
     return qEmployeer;
   }
 
+  /**
+	* Description This method allows to change the employeer quantity of the company. <br>
+	* <b>post:</b> The employeer quantity of the company is changed.
+	* @param The new employeer quantity of the company.
+	*/
   public void setQEmployeer(int qEmployeer){
     this.qEmployeer = qEmployeer;
   }
@@ -125,6 +155,11 @@ public abstract  class Company{
     return actives;
   }
 
+  /**
+  * Description This method allows to change the actives amount of the company. <br>
+  * <b>post:</b> The actives amount of the company is changed.
+  * @param The new actives amount of the company.
+  */
   public void setActives(double actives){
     this.actives = actives;
   }
@@ -138,6 +173,11 @@ public abstract  class Company{
     return type;
   }
 
+  /**
+  * Description This method allows to change the type of the company. <br>
+  * <b>post:</b> The type of the company is changed.
+  * @param The new type of the company.
+  */
   public void setType(char type){
     this.type = type;
   }
@@ -151,6 +191,11 @@ public abstract  class Company{
     return lRName;
   }
 
+  /**
+  * Description This method allows to change the legal representant name of the company. <br>
+  * <b>post:</b> The legal representant name of the company is changed.
+  * @param The new legal representant name of the company.
+  */
   public void setLRName(String lRName){
     this.lRName = lRName;
   }
@@ -164,6 +209,11 @@ public abstract  class Company{
     return bu;
   }
 
+  /**
+  * Description This method allows to change all the building. <br>
+  * <b>post:</b> All the building is changed.
+  * @param The building.
+  */
   public void setBu(Building bu){
     this.bu = bu;
   }

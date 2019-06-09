@@ -29,6 +29,11 @@ public class PService extends ServiceC{
     return servicePublic;
   }
 
+  /**
+  * Description This method allows to change the type of service of the company. <br>
+  * <b>post:</b> The type of service of the company is changed.
+  * @param The new type of service of the company.
+  */
   public void setServicePublic(String servicePublic){
     this.servicePublic = servicePublic;
   }
@@ -42,6 +47,11 @@ public class PService extends ServiceC{
     return suscriptorsTotally;
   }
 
+  /**
+  * Description This method allows to change the amount of subscribers of the company. <br>
+  * <b>post:</b> The amount of subscribers of the company is changed.
+  * @param The new amount of subscribers of the company.
+  */
   public void setSuscriptorsTotally(int suscriptorsTotally){
     this.suscriptorsTotally = suscriptorsTotally;
   }
@@ -55,6 +65,11 @@ public class PService extends ServiceC{
     return suscriptorsOneAndTwo;
   }
 
+  /**
+  * Description This method allows to change the amount of subscribers in stratum 1 and 2 of the company. <br>
+  * <b>post:</b> The amount of subscribers in stratum 1 and 2 of the company is changed.
+  * @param The new amount of subscribers in stratum 1 and 2 of the company.
+  */
   public void setSuscriptorsOneAndTwo(int suscriptorsOneAndTwo){
     this.suscriptorsOneAndTwo = suscriptorsOneAndTwo;
   }
