@@ -19,6 +19,11 @@ public class Employee{
 
   }
 
+  /**
+  * Description This method allows to get the name of the employer. <br>
+  * <b>post:</b> The name of the employer is given.
+  * @return The name of the employer.
+  */
   public String getName(){
     return name;
   }
@@ -27,6 +32,11 @@ public class Employee{
     this.name = name;
   }
 
+  /**
+  * Description This method allows to get the extension of the employer. <br>
+  * <b>post:</b> The extension of the employer is given.
+  * @return The extension of the employer.
+  */
   public String getExtension(){
     return extension;
   }
@@ -35,6 +45,11 @@ public class Employee{
     this.extension = extension;
   }
 
+  /**
+  * Description This method allows to get the position of the employer. <br>
+  * <b>post:</b> The position of the employer is given.
+  * @return The position of the employer.
+  */
   public String getPosition(){
     return position;
   }
@@ -43,6 +58,11 @@ public class Employee{
     this.position = position;
   }
 
+  /**
+  * Description This method allows to get the email of the employer. <br>
+  * <b>post:</b> The email of the employer is given.
+  * @return The email of the employer.
+  */
   public String getEmail(){
     return email;
   }
@@ -51,6 +71,11 @@ public class Employee{
     this.email = email;
   }
 
+  /**
+  * Description This method allows to get the disponibility of the cubicle. <br>
+  * <b>post:</b> The disponibility of the cubicle is given.
+  * @return The disponibility of the cubicle.
+  */
   public boolean getDisponibility(){
     return disponibility;
   }
