@@ -28,6 +28,11 @@ public class Education extends ServiceC{
   this.totalAmountActivesStudent = totalAmountActivesStudent;
   }
 
+  /**
+	* Description This method allows to get the approval registration number of the company. <br>
+	* <b>post:</b> The approval registration number of the company is given.
+	* @return The approval registration number of the company.
+	*/
   public String getNumberRegistrationMEN(){
     return numberRegistrationMEN;
   }
@@ -36,6 +41,11 @@ public class Education extends ServiceC{
     this.numberRegistrationMEN = numberRegistrationMEN;
   }
 
+  /**
+	* Description This method allows to get the number of years with acreditation of the company. <br>
+	* <b>post:</b> The number of years with acreditation of the company is given.
+	* @return The number of years with acreditation of the company.
+	*/
   public int getNumberYearsAcreditation(){
     return numberYearsAcreditation;
   }
@@ -44,6 +54,11 @@ public class Education extends ServiceC{
     this.numberYearsAcreditation = numberYearsAcreditation;
   }
 
+  /**
+	* Description This method allows to get the position on "Pruebas Saber 11" of the company. <br>
+	* <b>post:</b> The position on "Pruebas Saber 11" of the company is given.
+	* @return The position on "Pruebas Saber 11" of the company.
+	*/
   public int getNationalPositionSaber11(){
     return nationalPositionSaber11;
   }
@@ -52,6 +67,11 @@ public class Education extends ServiceC{
     this.nationalPositionSaber11 = nationalPositionSaber11;
   }
 
+  /**
+	* Description This method allows to get the position on "Pruebas Saber Pro" of the company. <br>
+	* <b>post:</b> The position on "Pruebas Saber Pro" of the company is given.
+	* @return The position on "Pruebas Saber Pro" of the company.
+	*/
   public int getNationalPositionSaberPro(){
     return nationalPositionSaberPro;
   }
@@ -60,6 +80,11 @@ public class Education extends ServiceC{
     this.nationalPositionSaberPro = nationalPositionSaberPro;
   }
 
+  /**
+	* Description This method allows to get the rector name of the company. <br>
+	* <b>post:</b> The rector name of the company is given.
+	* @return The rector name of the company.
+	*/
   public String getRectorName(){
     return rectorName;
   }
@@ -68,6 +93,11 @@ public class Education extends ServiceC{
     this.rectorName = rectorName;
   }
 
+  /**
+	* Description This method allows to get the educative sector of the company. <br>
+	* <b>post:</b> The educative sector of the company is given.
+	* @return The educative sector of the company.
+	*/
   public String getEducativeSector(){
     return educativeSector;
   }
@@ -76,6 +106,11 @@ public class Education extends ServiceC{
     this.educativeSector = educativeSector;
   }
 
+  /**
+	* Description This method allows to get the amount of students in stratum 1 and 2 of the company. <br>
+	* <b>post:</b> The amount of students in stratum 1 and 2 of the company is given.
+	* @return The amount of students in stratum 1 and 2 of the company.
+	*/
   public int getAmountStudentsStratum1and2(){
     return amountStudentsStratum1and2;
   }
@@ -84,6 +119,11 @@ public class Education extends ServiceC{
     this.amountStudentsStratum1and2 = amountStudentsStratum1and2;
   }
 
+  /**
+  * Description This method allows to get the amount of active students of the company. <br>
+  * <b>post:</b> The amount active students of the company is given.
+  * @return The amount of active students of the company.
+  */
   public int getTotalAmountActivesStudent(){
     return totalAmountActivesStudent;
   }
@@ -92,7 +132,7 @@ public class Education extends ServiceC{
     this.totalAmountActivesStudent = totalAmountActivesStudent;
   }
 
-  
+
   public String toString(){
   String msj = "";
 

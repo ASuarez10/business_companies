@@ -16,6 +16,11 @@ public class Product{
     this.numberUnities = numberUnities;
   }
 
+  /**
+  * Description This method allows to get the product name. <br>
+  * <b>post:</b> The product name is given.
+  * @return The product name.
+  */
   public String getNameProduct(){
     return nameProduct;
   }
@@ -24,6 +29,11 @@ public class Product{
     this.nameProduct = nameProduct;
   }
 
+  /**
+  * Description This method allows to get the water amount of the product fabrication. <br>
+  * <b>post:</b> The water amount of the product fabrication is given.
+  * @return The water amount of the product fabrication.
+  */
   public int getWaterAmount(){
     return waterAmount;
   }
@@ -32,6 +42,11 @@ public class Product{
     this.waterAmount = waterAmount;
   }
 
+  /**
+  * Description This method allows to get the identifier of the product. <br>
+  * <b>post:</b> The identifier of the product is given.
+  * @return The identifier of the product.
+  */
   public long getIdentify(){
     return identify;
   }
@@ -40,6 +55,11 @@ public class Product{
     this.identify = identify;
   }
 
+  /**
+  * Description This method allows to get the number of unities of the product. <br>
+  * <b>post:</b> The number of unities of the product is given.
+  * @return The number of unities of the product.
+  */
   public int getNumberUnities(){
     return numberUnities;
   }

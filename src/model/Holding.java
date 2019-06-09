@@ -185,59 +185,91 @@ public class Holding{
   }
 
   public String showBuildingL(String nombre3,String nombreEmpleado){
-  String msj = "";
+    String msj = "";
 
-  for(int i = 0; i < companies.size();i++){
-  if(companies.get(i).getName().equals(nombre3)){
+    for(int i = 0; i < companies.size();i++){
+      if(companies.get(i).getName().equals(nombre3)){
 
-  msj += companies.get(i).getBu().recorridoL(nombreEmpleado);
+        msj += companies.get(i).getBu().recorridoL(nombreEmpleado);
 
-  }
-
-  }
-  return msj;
+      }
+    }
+    return msj;
   }
 
   public String showBuildingZ(String nombre3,String nombreEmpleado){
-  String msj = "";
+    String msj = "";
 
-  for(int i = 0; i < companies.size();i++){
-  if(companies.get(i).getName().equals(nombre3)){
+    for(int i = 0; i < companies.size();i++){
+      if(companies.get(i).getName().equals(nombre3)){
 
-  msj += companies.get(i).getBu().recorridoZ(nombreEmpleado);
+        msj += companies.get(i).getBu().recorridoZ(nombreEmpleado);
 
-  }
-
-  }
-  return msj;
+      }
+    }
+    return msj;
   }
 
   public String showBuildingEspiral(String nombre3,String cargo1){
-  String msj = "";
+    String msj = "";
 
-  for(int i = 0; i < companies.size();i++){
-  if(companies.get(i).getName().equals(nombre3)){
+    for(int i = 0; i < companies.size();i++){
+      if(companies.get(i).getName().equals(nombre3)){
 
-  msj += companies.get(i).getBu().espiral(cargo1);
+        msj += companies.get(i).getBu().espiral(cargo1);
 
-  }
-
-  }
-  return msj;
+      }
+    }
+    return msj;
   }
 
   public String showBuildingE(String nombre3,String nombreEmpleado){
-  String msj = "";
+    String msj = "";
 
-  for(int i = 0; i < companies.size();i++){
-  if(companies.get(i).getName().equals(nombre3)){
+    for(int i = 0; i < companies.size();i++){
+      if(companies.get(i).getName().equals(nombre3)){
 
-  msj += companies.get(i).getBu().espiralE(nombreEmpleado);
+        msj += companies.get(i).getBu().espiralE(nombreEmpleado);
 
+      }
+    }
+    return msj;
   }
 
+  /** Description: Este metodo muestra el recorrido en O
+  *@param nombre3 String el nombre de la companhia
+  *@param nombreEmpleado el nombre del empleado
+  *@return String la informacion del edificio
+  */
+  public String showBuildingO(String nombre3,String nombreEmpleado){
+    String msj = "";
+
+    for(int i = 0; i < companies.size();i++){
+      if(companies.get(i).getName().equals(nombre3)){
+
+        msj += companies.get(i).getBu().espiralO(nombreEmpleado);
+
+      }
+    }
+    return msj;
   }
-  return msj;
+
+  /** Description: Este metodo muestra el recorrido en X
+  *@param nombre3 String el nombre de la companhia
+  *@param nombreEmpleado el nombre del empleado
+  *@return String la informacion del edificio
+  */
+  public String showBuildingX(String nombre3,String nombreEmpleado){
+    String msj = "";
+
+    for(int i = 0; i < companies.size();i++){
+      if(companies.get(i).getName().equals(nombre3)){
+
+      msj += companies.get(i).getBu().espiralXfila(nombreEmpleado);
+
+      }
+    }
+    return msj;
   }
 
 }//final

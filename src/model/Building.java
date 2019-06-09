@@ -25,6 +25,11 @@ public class Building{
     initializeMatriz();
   }
 
+  /**
+  * Description This method allows to get all the matriz. <br>
+  * <b>post:</b> All the matriz is given.
+  * @return All the matriz.
+  */
   public Employee[][] getEmployee(){
   	return cubicles;
   }

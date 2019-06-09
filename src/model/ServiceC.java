@@ -80,21 +80,63 @@ public class ServiceC extends Company{
 
   }
 
-  public String promediateOfThis(){
+  /** Description: el promedio en general
+  *@return int el servicio
+  */
+  public int promediateOfThis(){
 
-  String msj = "";
-  int ser = 0;
-  int ans = 0;
-  int rela = 0;
-  for(int i = 0; i < sS.size();i++){
-    ser += sS.get(i).getServiceDoIt();
-    ans += sS.get(i).getAnswerTime();
-    rela += sS.get(i).getRelationCostXBenefit();
+    int ser = 0;
+    for(int i = 0; i < sS.size();i++){
+      ser += sS.get(i).getServiceDoIt();
 
-    msj += "El servicio hecho es:" + ser + "El tiempo de respuesta es:" + ans + "El costo de relacion por beneficio es:" + rela;
+    }
+    return ser;
   }
-  return msj;
 
+
+  /** Description: el promedio en general
+  *@return int el tiempo de respuesta
+  */
+  public int promediateOfThis1(){
+  int ans = 0;
+  for(int i = 0; i < sS.size();i++){
+    ans += sS.get(i).getAnswerTime();
+
+  }
+  return ans;
+  }
+
+  /** Description: el promedio en general
+  *@return int la relacion costo por beneficio
+  */
+  public int promediateOfThis2(){
+    int rela = 0;
+    for(int i = 0; i < sS.size();i++){
+      rela += sS.get(i).getRelationCostXBenefit();
+    }
+    return rela;
+  }
+
+  /** Description: el promedio final sobre 10
+  *@return int el promedio
+  */
+  public int promediateFinal(){
+    int finalPolls = 0;
+
+    finalPolls = (promediateOfThis() + promediateOfThis1() + promediateOfThis2()) / 10;
+
+    return finalPolls;
+  }
+
+  /** Description: el promedio final sobre 50
+  *@return int el promedio
+  */
+  public int promediateFinal1(){
+    int finalPolls1 = 0;
+
+    finalPolls1 = (promediateOfThis() + promediateOfThis1() + promediateOfThis2()) / 50;
+
+    return finalPolls1;
   }
 
 }//Final

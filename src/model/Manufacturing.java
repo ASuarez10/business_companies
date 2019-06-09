@@ -13,6 +13,11 @@ public class Manufacturing extends Company{
     products = new ArrayList<Product>();
   }
 
+  /**
+  * Description This method allows to get the ArrayList. <br>
+  * <b>post:</b> The ArrayList is given.
+  * @return The ArrayList of the company.
+  */
   public ArrayList<Product> getProducts(){
     return products;
   }
@@ -27,6 +32,11 @@ public class Manufacturing extends Company{
 
   }
 
+  /**
+  * Description This method allows to get the information of the company. <br>
+  * <b>post:</b> The information of the company is given.
+  * @return The information of the company.
+  */
   public String getInformation(){
 
   String msj = "";

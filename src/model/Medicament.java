@@ -22,6 +22,11 @@ public class Medicament extends Manufacturing{
     this.modality = modality;
   }
 
+  /**
+  * Description This method allows to get the sanitary registration of the company. <br>
+  * <b>post:</b> The sanitary registration of the company is given.
+  * @return The sanitary registration of the company.
+  */
   public String getSanitaryRegistration(){
     return sanitaryRegistration;
   }
@@ -30,6 +35,11 @@ public class Medicament extends Manufacturing{
     this.sanitaryRegistration = sanitaryRegistration;
   }
 
+  /**
+  * Description This method allows to get the state of the company. <br>
+  * <b>post:</b> The state of the company is given.
+  * @return The state of the company.
+  */
   public String getState(){
     return state;
   }
@@ -38,6 +48,11 @@ public class Medicament extends Manufacturing{
     this.state = state;
   }
 
+  /**
+  * Description This method allows to get the expiration of the company. <br>
+  * <b>post:</b> The expiration of the company is given.
+  * @return The expiration of the company.
+  */
   public String getExpiration(){
     return expiration;
   }
@@ -46,6 +61,11 @@ public class Medicament extends Manufacturing{
     this.expiration = expiration;
   }
 
+  /**
+  * Description This method allows to get the modality of the company. <br>
+  * <b>post:</b> The modality of the company is given.
+  * @return The modality of the company.
+  */
   public char getModality(){
   return modality;
   }

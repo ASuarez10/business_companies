@@ -18,6 +18,11 @@ public class FoodC extends Manufacturing{
   this.conservation = conservation;
   }
 
+  /**
+  * Description This method allows to get the importer of the company. <br>
+  * <b>post:</b> The importer of the company is given.
+  * @return The importer of the company.
+  */
   public String getImporter(){
     return importer;
   }
@@ -26,6 +31,11 @@ public class FoodC extends Manufacturing{
     this.importer = importer;
   }
 
+  /**
+  * Description This method allows to get the maker of the company. <br>
+  * <b>post:</b> The maker of the company is given.
+  * @return The maker of the company.
+  */
   public String getMaker(){
     return maker;
   }
@@ -34,6 +44,11 @@ public class FoodC extends Manufacturing{
     this.maker = maker;
   }
 
+  /**
+  * Description This method allows to get the conservation temperature of the company. <br>
+  * <b>post:</b> The conservation temperature of the company is given.
+  * @return The conservation temperature of the company.
+  */
   public String getConservation(){
     return conservation;
   }
