@@ -29,22 +29,33 @@ public  class Main{
   public void showMenu(){
     int userImput = 0;
 
-    System.out.println("|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
-    System.out.println("|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
+
+    System.out.println("---------------------------------------------------------------");
     System.out.println("1.Mostrar la informacion");
+      System.out.println("---------------------------------------------------------------");
     System.out.println("2.Buscar al empleado en la empresa en forma de X");
+      System.out.println("---------------------------------------------------------------");
     System.out.println("3.Buscar al empleado en la empresa en forma de Espiral");
+      System.out.println("---------------------------------------------------------------");
     System.out.println("4.Buscar al empleado en la empresa en forma de O");
+      System.out.println("---------------------------------------------------------------");
     System.out.println("5.Buscar al empleado en la empresa en forma de E");
+      System.out.println("---------------------------------------------------------------");
     System.out.println("6.Buscar al empleado en la empresa en forma de L");
+      System.out.println("---------------------------------------------------------------");
     System.out.println("7.Agregar una compahnia");
+      System.out.println("---------------------------------------------------------------");
     System.out.println("8.Agregar un edificio a una empresa");
+      System.out.println("---------------------------------------------------------------");
     System.out.println("9.Agregar encuestas a una empresa");
+      System.out.println("---------------------------------------------------------------");
     System.out.println("10.Agregar un empleado a un cubiculo");
+      System.out.println("---------------------------------------------------------------");
     System.out.println("11.Agregar productos a una empresa");
+      System.out.println("---------------------------------------------------------------");
     System.out.println("12.Salir");
-    System.out.println("|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
-    System.out.println("|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
+      System.out.println("---------------------------------------------------------------");
+  
 
     while(userImput != 12){
 
