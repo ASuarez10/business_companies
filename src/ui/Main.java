@@ -55,7 +55,7 @@ public  class Main{
       System.out.println("---------------------------------------------------------------");
     System.out.println("12.Salir");
       System.out.println("---------------------------------------------------------------");
-  
+
 
     while(userImput != 12){
 
@@ -120,7 +120,7 @@ public  class Main{
 
         int userSelection = 0;
 
-        System.out.println("||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
+
         System.out.println("Elija el tipo de companhia");
         System.out.println("|||||||||||||||||||||DE SERVICIO||||||||||||||||||||||||");
         System.out.println("1.Empresa de Educacion");
@@ -130,7 +130,7 @@ public  class Main{
         System.out.println("4.Empresa de comida");
         System.out.println("5.Empresa de medicamento");
         System.out.println("6.Salir de la creacion");
-        System.out.println("||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
+        
         while(userSelection != 6){
         userSelection = reader.nextInt();
         reader.nextLine();
