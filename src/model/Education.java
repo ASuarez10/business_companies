@@ -37,6 +37,11 @@ public class Education extends ServiceC{
     return numberRegistrationMEN;
   }
 
+  /**
+  * Description This method allows to change the approval registration number of the company. <br>
+  * <b>post:</b> The approval registration number of the company is changed.
+  * @param The new approval registration number of the company.
+  */
   public void setNumberRegistrationMEN(String numberRegistrationMEN){
     this.numberRegistrationMEN = numberRegistrationMEN;
   }
@@ -50,6 +55,11 @@ public class Education extends ServiceC{
     return numberYearsAcreditation;
   }
 
+  /**
+  * Description This method allows to change the number of years with acreditation of the company. <br>
+  * <b>post:</b> The number of years with acreditation of the company is changed.
+  * @param The new number of years with acreditation of the company.
+  */
   public void setNumberYearsAcreditation(int numberYearsAcreditation){
     this.numberYearsAcreditation = numberYearsAcreditation;
   }
@@ -63,6 +73,11 @@ public class Education extends ServiceC{
     return nationalPositionSaber11;
   }
 
+  /**
+  * Description This method allows to change the position on "Pruebas Saber 11" of the company. <br>
+  * <b>post:</b> The position on "Pruebas Saber 11" of the company is changed.
+  * @param The new position on "Pruebas Saber 11" of the company.
+  */
   public void setNationalPositionSaber11(int nationalPositionSaber11){
     this.nationalPositionSaber11 = nationalPositionSaber11;
   }
@@ -76,6 +91,11 @@ public class Education extends ServiceC{
     return nationalPositionSaberPro;
   }
 
+  /**
+  * Description This method allows to change the position on "Pruebas Saber Pro" of the company. <br>
+  * <b>post:</b> The position on "Pruebas Saber Pro" of the company is changed.
+  * @param The new position on "Pruebas Saber Pro" of the company.
+  */
   public void setNationalPositionSaberPro(int nationalPositionSaberPro){
     this.nationalPositionSaberPro = nationalPositionSaberPro;
   }
@@ -89,6 +109,11 @@ public class Education extends ServiceC{
     return rectorName;
   }
 
+  /**
+  * Description This method allows to change the rector name of the company. <br>
+  * <b>post:</b> The rector name of the company is changed.
+  * @param The new rector name of the company.
+  */
   public void setRectorName(String rectorName){
     this.rectorName = rectorName;
   }
@@ -102,6 +127,11 @@ public class Education extends ServiceC{
     return educativeSector;
   }
 
+  /**
+  * Description This method allows to change the educative sector of the company. <br>
+  * <b>post:</b> The educative sector of the company is changed.
+  * @param The new educative sector of the company.
+  */
   public void setEducativeSector(String educativeSector){
     this.educativeSector = educativeSector;
   }
@@ -115,6 +145,11 @@ public class Education extends ServiceC{
     return amountStudentsStratum1and2;
   }
 
+  /**
+  * Description This method allows to change the amount of students in stratum 1 and 2 of the company. <br>
+  * <b>post:</b> The amount of students in stratum 1 and 2 of the company is changed.
+  * @param The new amount of students in stratum 1 and 2 of the company.
+  */
   public void setAmountStudentsStratum1and2(int amountStudentsStratum1and2){
     this.amountStudentsStratum1and2 = amountStudentsStratum1and2;
   }
@@ -128,11 +163,18 @@ public class Education extends ServiceC{
     return totalAmountActivesStudent;
   }
 
+  /**
+  * Description This method allows to change the amount of active students of the company. <br>
+  * <b>post:</b> The amount of active students of the company is changed.
+  * @param The new amount of active students of the company.
+  */
   public void setTotalAmountActivesStudent(int totalAmountActivesStudent){
     this.totalAmountActivesStudent = totalAmountActivesStudent;
   }
 
-
+  /** Description:This method allows to get the company information
+  *@return Company information
+  */
   public String toString(){
   String msj = "";
 
@@ -164,6 +206,10 @@ public class Education extends ServiceC{
 
   }
 
+  /**
+  *Description: This method allows to calculate the taxes cost
+  *@return The taxes cost
+  */
   public double calculatedProCultura(){
   double porcentaje = 0.0;
 

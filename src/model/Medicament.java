@@ -31,6 +31,11 @@ public class Medicament extends Manufacturing{
     return sanitaryRegistration;
   }
 
+  /**
+  * Description This method allows to change the sanitary registration of the company. <br>
+  * <b>post:</b> The sanitary registration of the company is changed.
+  * @param The new sanitary registration of the company.
+  */
   public void setSanitaryRegistration(String sanitaryRegistration){
     this.sanitaryRegistration = sanitaryRegistration;
   }
@@ -44,6 +49,11 @@ public class Medicament extends Manufacturing{
     return state;
   }
 
+  /**
+  * Description This method allows to change the state of the company. <br>
+  * <b>post:</b> The state of the company is changed.
+  * @param The new state of the company.
+  */
   public void setState(String state){
     this.state = state;
   }
@@ -57,6 +67,11 @@ public class Medicament extends Manufacturing{
     return expiration;
   }
 
+  /**
+  * Description This method allows to change the expiration of the company. <br>
+  * <b>post:</b> The expiration of the company is changed.
+  * @param The new expiration of the company.
+  */
   public void setExpiration(String expiration){
     this.expiration = expiration;
   }
@@ -70,10 +85,18 @@ public class Medicament extends Manufacturing{
   return modality;
   }
 
+  /**
+  * Description This method allows to change the modality of the company. <br>
+  * <b>post:</b> The modality of the company is changed.
+  * @param The new modality of the company.
+  */
   public void setModality(char modality){
     this.modality = modality;
   }
 
+  /** Description:This method allows to get the company information
+  *@return Company information
+  */
   public String toString(){
   String msj = "";
 
@@ -93,6 +116,10 @@ public class Medicament extends Manufacturing{
   return msj;
   }
 
+  /**
+  *Description: This method allows to calculate the trees amount to plant
+  *@return The trees amount to plant
+  */
   public int calculateTreeX(){
 
   int treesToPlant = 0;

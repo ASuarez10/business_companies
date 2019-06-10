@@ -38,23 +38,11 @@ public class Building{
   	this.cubicles = cubicles;
   }
 
-  public void assigTheEmploInCub(String nameEm, String positionEm, String emailEm){
-
-  boolean t = false;
-  	for(int i = 0; i < cubicles.length && !t;i++){
-  		for(int k = 0; k < cubicles[0].length && !t;k++){
-  			if(cubicles[i][k].getDisponibility() == false){
-  				cubicles[i][k].setName(nameEm);
-  				cubicles[i][k].setPosition(positionEm);
-  				cubicles[i][k].setEmail(emailEm);
-  				cubicles[i][k].setDisponibility(true);
-  				t = true;
-  			}
-  		}
-  	}
-  }
-
-  public String recorridoL(String nameEmpleado){
+  /** Description: This method allows make a travel in L
+  *@param nameEmpleado Employee name
+  *@return Employee name
+  */
+  public String enL(String nameEmpleado){
   String msj = "";
   int k = 0;
   boolean abajoL = false;
@@ -73,8 +61,6 @@ public class Building{
 
               msj = "El empleado es" + cubicles[k][m].getExtension();
       }
-
-
     }
 
   }
@@ -84,8 +70,11 @@ public class Building{
 
   }
 
-
-  public String recorridoZ(String nombreEmpleado){
+  /** Description: This method allows make a travel in Z
+  *@param nameEmpleado Employee name
+  *@return Employee name
+  */
+  public String enZ(String nombreEmpleado){
 
   String msj = "";
 
@@ -110,18 +99,40 @@ public class Building{
   return msj;
   }
 
+  /**Description: This method assigns an employee in a cubicle
+  *@param nameEm Employee name
+  *@param positionEm Employee position
+  *@param emailEm Employee email
+  */
+  public void assigTheEmploInCub(String nameEm, String positionEm, String emailEm){
 
-  public String espiralXfila(String nombreEmpleado){
+    boolean t = false;
+    	for(int i = 0; i < cubicles.length && !t;i++){
+    		for(int k = 0; k < cubicles[0].length && !t;k++){
+    			if(cubicles[i][k].getDisponibility() == false){
+    				cubicles[i][k].setName(nameEm);
+    				cubicles[i][k].setPosition(positionEm);
+    				cubicles[i][k].setEmail(emailEm);
+    				cubicles[i][k].setDisponibility(true);
+    				t = true;
+    			}
+    		}
+    	}
+  }
+
+  /** Description: This method allows make a travel in X
+  *@param nameEmpleado Employee name
+  *@return Employee name
+  */
+  public String enX(String nombreEmpleado){
   String msj ="";
 
-  //Diagonal principal
    for(int i = 0; i < cubicles.length;i++){
   	 if(cubicles[i][i].getName().equals(nombreEmpleado)){
   		 msj += "El empleado es:" + cubicles[i][i].getExtension();
   	 }
    }
 
-  //Diagonal Inversa
     for(int k = 0; k < cubicles.length;k++){
   	if((cubicles.length % 2 == 0) || (cubicles.length % 2 != 0 && k != cubicles.length/2)){
   		if(cubicles[k][cubicles.length-1-k].getName().equals(nombreEmpleado)){
@@ -133,62 +144,74 @@ public class Building{
   return msj;
   }
 
-  public String espiralE(String nombreEmpleado){
-  String msj = "";
-  int m = 0;
+  /** Description: This method allows make a travel in O
+  *@param nameEmpleado Employee name
+  *@return Employee name
+  */
+  public String enEO(String nombreEmpleado){
+    String msj = "";
 
-  for(int i = 0; i < cubicles.length;i+= 2){
-  	for(int j = 0; j < cubicles.length;j++){
-  		if(m % 2 == 0){
-  			if(cubicles[i][j].getName().equals(nombreEmpleado)){
-  			msj += "El empleado es:" + cubicles[i][j].getExtension();
-  			 }
-  			}else if(m % 2 != 0){
-  						if(cubicles[i][cubicles.length-j-1].getName().equals(nombreEmpleado)){
-  						msj += "El empleado es:" + cubicles[i][cubicles.length-j-1].getExtension();
-  				}
-  			}
-  		}
-  		if(m % 2 == 0 && i < cubicles.length-1){
-  			if(cubicles[i+1][cubicles.length-1].getName().equals(nombreEmpleado)){
-  				msj += "El empleado es:" + cubicles[i+1][cubicles.length-1].getExtension();
-  			}
-  		}else{
-  			if(cubicles[i+1][0].getName().equals(nombreEmpleado)){
-  				msj += "El empleado es:" + cubicles[i+1][0].getExtension();
-  			}
-  		}
-  		m++;
-  	}
-  		return msj;
-  }
-
-  public String espiralO(String nombreEmpleado){
-  String msj = "";
-
-  for(int i = 0; i < cubicles.length;i++){
-    if(cubicles[0][i].getName().equals(nombreEmpleado)){
-      msj += "El empleado es:" + cubicles[0][i].getExtension();
+    for(int i = 0; i < cubicles.length;i++){
+      if(cubicles[0][i].getName().equals(nombreEmpleado)){
+        msj += "El empleado es:" + cubicles[0][i].getExtension();
+      }
     }
-  }
 
-  for(int k = cubicles[0].length-1; k > 0; k--){
-    if(cubicles[cubicles.length][k].getName().equals(nombreEmpleado)){
-      msj += "El empleado es:" + cubicles[cubicles.length][k].getExtension();
+    for(int k = cubicles[0].length-1; k > 0; k--){
+      if(cubicles[cubicles.length][k].getName().equals(nombreEmpleado)){
+        msj += "El empleado es:" + cubicles[cubicles.length][k].getExtension();
+      }
     }
+
+    for(int o = 0; o < cubicles.length;o++){
+     if(cubicles[o][0].getName().equals(nombreEmpleado)){
+       msj += "El empleado es:" +cubicles[o][0].getExtension();
+     }else if(cubicles[o][cubicles.length].getName().equals(nombreEmpleado)){
+       msj += "El empleado es:" +cubicles[o][cubicles.length].getExtension();
+     }
+    }
+    return msj;
+
   }
 
-  for(int o = 0; o < cubicles.length;o++){
-   if(cubicles[o][0].getName().equals(nombreEmpleado)){
-     msj += "El empleado es:" +cubicles[o][0].getExtension();
-   }else if(cubicles[o][cubicles.length].getName().equals(nombreEmpleado)){
-     msj += "El empleado es:" +cubicles[o][cubicles.length].getExtension();
-   }
-  }
-  return msj;
+  /** Description: This method allows make a travel in E
+  *@param nameEmpleado Employee name
+  *@return Employee name
+  */
+  public String enE(String nombreEmpleado){
+    String msj = "";
+    int m = 0;
 
+    for(int i = 0; i < cubicles.length;i+= 2){
+    	for(int j = 0; j < cubicles.length;j++){
+    		if(m % 2 == 0){
+    			if(cubicles[i][j].getName().equals(nombreEmpleado)){
+    			msj += "El empleado es:" + cubicles[i][j].getExtension();
+    			 }
+    			}else if(m % 2 != 0){
+    						if(cubicles[i][cubicles.length-j-1].getName().equals(nombreEmpleado)){
+    						msj += "El empleado es:" + cubicles[i][cubicles.length-j-1].getExtension();
+    				}
+    			}
+    		}
+    		if(m % 2 == 0 && i < cubicles.length-1){
+    			if(cubicles[i+1][cubicles.length-1].getName().equals(nombreEmpleado)){
+    				msj += "El empleado es:" + cubicles[i+1][cubicles.length-1].getExtension();
+    			}
+    		}else{
+    			if(cubicles[i+1][0].getName().equals(nombreEmpleado)){
+    				msj += "El empleado es:" + cubicles[i+1][0].getExtension();
+    			}
+    		}
+    		m++;
+    	}
+    	return msj;
   }
 
+  /** Description: This method allows make a travel in espiral
+  *@param nameEmpleado Employee name
+  *@return Employee name
+  */
   public String espiral(String cargo){
 
   	String msj = "";

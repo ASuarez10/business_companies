@@ -28,6 +28,11 @@ public class Employee{
     return name;
   }
 
+  /**
+  * Description This method allows to change the name of the employer. <br>
+  * <b>post:</b> The name of the employer is changed.
+  * @param The new name of the employer.
+  */
   public void setName(String name){
     this.name = name;
   }
@@ -41,6 +46,11 @@ public class Employee{
     return extension;
   }
 
+  /**
+  * Description This method allows to change the extension of the employer. <br>
+  * <b>post:</b> The extension of the employer is changed.
+  * @param The new extension of the employer.
+  */
   public void setExtension(String extension){
     this.extension = extension;
   }
@@ -54,6 +64,11 @@ public class Employee{
     return position;
   }
 
+  /**
+  * Description This method allows to change the position of the employer. <br>
+  * <b>post:</b> The position of the employer is changed.
+  * @param The new position of the employer.
+  */
   public void setPosition(String position){
     this.position = position;
   }
@@ -67,6 +82,11 @@ public class Employee{
     return email;
   }
 
+  /**
+  * Description This method allows to change the email of the employer. <br>
+  * <b>post:</b> The email of the employer is changed.
+  * @param The new email of the employer.
+  */
   public void setEmail(String email){
     this.email = email;
   }
@@ -80,6 +100,11 @@ public class Employee{
     return disponibility;
   }
 
+  /**
+  * Description This method allows to change the disponibility of the cubicle. <br>
+  * <b>post:</b> The disponibility of the cubicle is changed.
+  * @param The new disponibility of the cubicle.
+  */
   public void setDisponibility(boolean disponibility){
     this.disponibility = disponibility;
   }

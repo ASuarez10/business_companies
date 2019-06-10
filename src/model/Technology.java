@@ -68,6 +68,10 @@ public class Technology extends ServiceC{
   	this.killowatts = killowatts;
   }
 
+  /**
+  *Description: This method allows to calculate the trees amount to plant
+  *@return The trees amount to plant
+  */
   public int calculateTreeXKW(){
 
     int treesToPlant = 0;
@@ -90,6 +94,9 @@ public class Technology extends ServiceC{
 
   }
 
+  /** Description:This method allows to get the company information
+  *@return Company information
+  */
   public String toString(){
   String msj = "";
 

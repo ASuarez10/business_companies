@@ -27,6 +27,11 @@ public class FoodC extends Manufacturing{
     return importer;
   }
 
+  /**
+  * Description This method allows to change the importer of the company. <br>
+  * <b>post:</b> The importer of the company is changed.
+  * @param The new importer of the company.
+  */
   public void setImporter(String importer){
     this.importer = importer;
   }
@@ -40,6 +45,11 @@ public class FoodC extends Manufacturing{
     return maker;
   }
 
+  /**
+  * Description This method allows to change the maker of the company. <br>
+  * <b>post:</b> The maker of the company is changed.
+  * @param The new maker of the company.
+  */
   public void setMaker(String maker){
     this.maker = maker;
   }
@@ -53,10 +63,18 @@ public class FoodC extends Manufacturing{
     return conservation;
   }
 
+  /**
+  * Description This method allows to change the conservation temperature of the company. <br>
+  * <b>post:</b> The conservation temperature of the company is changed.
+  * @param The new conservation temperature of the company.
+  */
   public void setConservation(String conservation){
     this.conservation = conservation;
   }
 
+  /** Description:This method allows to get the company information
+  *@return Company information
+  */
   public String toString(){
   String msj = "";
 

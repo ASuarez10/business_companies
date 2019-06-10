@@ -25,6 +25,11 @@ public class Product{
     return nameProduct;
   }
 
+  /**
+  * Description This method allows to change the product name. <br>
+  * <b>post:</b> The product name is changed.
+  * @param The new product name.
+  */
   public void setNameProduct(String nameProduct){
     this.nameProduct = nameProduct;
   }
@@ -38,6 +43,11 @@ public class Product{
     return waterAmount;
   }
 
+  /**
+  * Description This method allows to change the water amount of the product fabrication. <br>
+  * <b>post:</b> The water amount of the product fabrication is changed.
+  * @param The new water amount of the product fabrication.
+  */
   public void setWaterAmount(int waterAmount){
     this.waterAmount = waterAmount;
   }
@@ -51,6 +61,11 @@ public class Product{
     return identify;
   }
 
+  /**
+  * Description This method allows to change the product identifier. <br>
+  * <b>post:</b> The product identifier is changed.
+  * @param The new product identifier.
+  */
   public void setIdentify(long identify){
     this.identify = identify;
   }
@@ -64,6 +79,11 @@ public class Product{
     return numberUnities;
   }
 
+  /**
+  * Description This method allows to change the number of unities of the product. <br>
+  * <b>post:</b> The number of unities of the product is changed.
+  * @param The new number of unities of the product.
+  */
   public void setNumerUnities(){
     this.numberUnities = numberUnities;
   }

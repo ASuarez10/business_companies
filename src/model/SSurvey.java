@@ -22,6 +22,11 @@ public class SSurvey{
     return serviceDoIt;
   }
 
+  /**
+  * Description This method allows to change the quality of the service. <br>
+  * <b>post:</b> The quality of the service is changed.
+  * @param The new quality of the service
+  */
   public void setServiceDoIt(int serviceDoIt){
     this.serviceDoIt = serviceDoIt;
   }
@@ -35,6 +40,11 @@ public class SSurvey{
     return answerTime;
   }
 
+  /**
+  * Description This method allows to change the answer time. <br>
+  * <b>post:</b> The answer time is changed.
+  * @param The new the answer time.
+  */
   public void setAnswerTime(int answerTime){
     this.answerTime = answerTime;
   }
@@ -48,8 +58,13 @@ public class SSurvey{
     return relationCostXBenefit;
   }
 
+  /**
+  * Description This method allows to change the relation of cost and benefit. <br>
+  * <b>post:</b> The relation of cost and benefit is changed.
+  * @param The new the answer time.
+  */
   public void setRelationCostXBenefit(int relationCostXBenefit){
     this.relationCostXBenefit = relationCostXBenefit;
   }
 
-}
+}//final

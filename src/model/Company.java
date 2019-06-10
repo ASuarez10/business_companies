@@ -218,6 +218,8 @@ public abstract  class Company{
     this.bu = bu;
   }
 
+  /** Description:This method allows to get the company information
+  */
   public abstract String toString();
 
 }//final

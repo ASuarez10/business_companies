@@ -74,6 +74,9 @@ public class PService extends ServiceC{
     this.suscriptorsOneAndTwo = suscriptorsOneAndTwo;
   }
 
+  /** Description:This method allows to get the company information
+  *@return Company information
+  */
   public String toString(){
   String msj = "";
 
@@ -90,10 +93,12 @@ public class PService extends ServiceC{
   msj += "---------------------------------------------------------------------------------------------------------------------------- \n";
 
   return msj;
-
-
   }
 
+  /**
+  *Description: This method allows to calculate the taxes cost
+  *@return The taxes cost
+  */
   public double calculatedProCultura(){
 
     double porProCultura = 0.0;

@@ -23,6 +23,24 @@ public class Holding{
     return bl;
   }
 
+  /** Description: This method allows to show the travel in E
+  *@param nombre3 Company name
+  *@param nombreEmpleado Employee name
+  *@return Building info
+  */
+  public String sE(String nombre3,String nombreEmpleado){
+    String msj = "";
+
+    for(int i = 0; i < companies.size();i++){
+      if(companies.get(i).getName().equals(nombre3)){
+
+        msj += companies.get(i).getBu().enE(nombreEmpleado);
+
+      }
+    }
+    return msj;
+  }
+
   /**
 	* Description This method allows to change the building. <br>
 	* <b>post:</b> The building is changed.
@@ -49,16 +67,26 @@ public class Holding{
   return msj;
   }
 
-
-  public void addCompanyProducts(Company k,ArrayList<Product> l){
+  /**
+	* Description This method allows to add products. <br>
+	* <b>post:</b> Products were added.
+	* @param k Company.
+  * @param l Products.
+	*/
+  public void addCP(Company k,ArrayList<Product> l){
 
     companies.add(k);
     ((Manufacturing) k).addProduct(l);
 
-
   }
 
-  public void addCompanyWithSSurveys(Company k, ArrayList<SSurvey> SSurveys){
+  /**
+	* Description This method allows to add surveys. <br>
+	* <b>post:</b> Surveys were added.
+	* @param k Company.
+  * @param l The polls.
+	*/
+  public void addCSS(Company k, ArrayList<SSurvey> SSurveys){
 
   companies.add(k);
   ((ServiceC)k).addSS(SSurveys);
@@ -66,7 +94,12 @@ public class Holding{
 
   }
 
-  public String getCompaniesNames(){
+  /**
+	* Description This method allows to get the names of the companies. <br>
+	* @return The names of the companies.
+	*/
+
+  public String getCNames(){
     String msj = "";
 
   	for(int i = 0; i < companies.size();i++){
@@ -76,15 +109,29 @@ public class Holding{
           msj += companies.get(i).getName();
 
         }
-
-
     }
-
   return msj;
-
   }
 
-  public String getCompanyWithProducts(String nombre){
+  /** Description: This method allows to show the travel in espiral
+  *@param nombre3 Company name
+  *@param nombreEmpleado Employee name
+  *@return Building info
+  */
+  public String sEspiral(String nombre3,String cargo1){
+    String msj = "";
+
+    for(int i = 0; i < companies.size();i++){
+      if(companies.get(i).getName().equals(nombre3)){
+
+        msj += companies.get(i).getBu().espiral(cargo1);
+
+      }
+    }
+    return msj;
+  }
+
+  public String getCP(String nombre){
   String msj = "";
 
   for(int i = 0; i < companies.size();i++){
@@ -103,7 +150,25 @@ public class Holding{
   return msj;
   }
 
-  public String getCompanyWithSSurveys(String nombre1){
+  /** Description: This method allows to show the travel in O
+  *@param nombre3 Company name
+  *@param nombreEmpleado Employee name
+  *@return Building info
+  */
+  public String sO(String nombre3,String nombreEmpleado){
+    String msj = "";
+
+    for(int i = 0; i < companies.size();i++){
+      if(companies.get(i).getName().equals(nombre3)){
+
+        msj += companies.get(i).getBu().enEO(nombreEmpleado);
+
+      }
+    }
+    return msj;
+  }
+
+  public String getCSS(String nombre1){
   String msj = "";
 
   for(int i = 0; i < companies.size();i++){
@@ -123,7 +188,7 @@ public class Holding{
 
   }
 
-  public ArrayList<Product> getProductWithCompany(String nombre){
+  public ArrayList<Product> getPC(String nombre){
 
   ArrayList<Product> m = null;
 
@@ -141,6 +206,24 @@ public class Holding{
     }
   }
   return m;
+  }
+
+  /** Description: This method allows to show the travel in X
+  *@param nombre3 Company name
+  *@param nombreEmpleado Employee name
+  *@return Building info
+  */
+  public String sX(String nombre3,String nombreEmpleado){
+    String msj = "";
+
+    for(int i = 0; i < companies.size();i++){
+      if(companies.get(i).getName().equals(nombre3)){
+
+      msj += companies.get(i).getBu().enX(nombreEmpleado);
+
+      }
+    }
+    return msj;
   }
 
   public ArrayList<SSurvey> getSSurveysWithCompany(String nombre1){
@@ -164,6 +247,14 @@ public class Holding{
 
   }
 
+  /**
+  *Description: This method allows to add a employeer to a cubicle
+  *@param nameCom The name of the company
+  *@param nameEm The name of the employeer
+  *@param positionEm the employee position
+  *@param emailEm The employeer email
+  *<b>post:</b> The phone number of the company is given.
+  */
   public void addEmployeerToCubicules(String nameCom,String nameEm,String positionEm,String emailEm){
 
   for(int i = 0; i < companies.size();i++){
@@ -176,7 +267,7 @@ public class Holding{
 
   }
 
-  public void addBuildingToCompany(String nameCom,Building numberPisos){
+  public void addBC(String nameCom,Building numberPisos){
 
   for(int i = 0; i < companies.size();i++){
     if(companies.get(i).getName().equals(nameCom)){
@@ -184,93 +275,39 @@ public class Holding{
           companies.get(i).setBu(numberPisos);
       }
     }
-
+  }
   }
 
-  }
-
-  public String showBuildingL(String nombre3,String nombreEmpleado){
-    String msj = "";
-
-    for(int i = 0; i < companies.size();i++){
-      if(companies.get(i).getName().equals(nombre3)){
-
-        msj += companies.get(i).getBu().recorridoL(nombreEmpleado);
-
-      }
-    }
-    return msj;
-  }
-
-  public String showBuildingZ(String nombre3,String nombreEmpleado){
-    String msj = "";
-
-    for(int i = 0; i < companies.size();i++){
-      if(companies.get(i).getName().equals(nombre3)){
-
-        msj += companies.get(i).getBu().recorridoZ(nombreEmpleado);
-
-      }
-    }
-    return msj;
-  }
-
-  public String showBuildingEspiral(String nombre3,String cargo1){
-    String msj = "";
-
-    for(int i = 0; i < companies.size();i++){
-      if(companies.get(i).getName().equals(nombre3)){
-
-        msj += companies.get(i).getBu().espiral(cargo1);
-
-      }
-    }
-    return msj;
-  }
-
-  public String showBuildingE(String nombre3,String nombreEmpleado){
-    String msj = "";
-
-    for(int i = 0; i < companies.size();i++){
-      if(companies.get(i).getName().equals(nombre3)){
-
-        msj += companies.get(i).getBu().espiralE(nombreEmpleado);
-
-      }
-    }
-    return msj;
-  }
-
-  /** Description: Este metodo muestra el recorrido en O
-  *@param nombre3 String el nombre de la companhia
-  *@param nombreEmpleado el nombre del empleado
-  *@return String la informacion del edificio
+  /** Description: This method allows to show the travel in L
+  *@param nombre3 Company name
+  *@param nombreEmpleado Employee name
+  *@return Building info
   */
-  public String showBuildingO(String nombre3,String nombreEmpleado){
+  public String sL(String nombre3,String nombreEmpleado){
     String msj = "";
 
     for(int i = 0; i < companies.size();i++){
       if(companies.get(i).getName().equals(nombre3)){
 
-        msj += companies.get(i).getBu().espiralO(nombreEmpleado);
+        msj += companies.get(i).getBu().enL(nombreEmpleado);
 
       }
     }
     return msj;
   }
 
-  /** Description: Este metodo muestra el recorrido en X
-  *@param nombre3 String el nombre de la companhia
-  *@param nombreEmpleado el nombre del empleado
-  *@return String la informacion del edificio
+  /** Description: This method allows to show the travel in Z
+  *@param nombre3 Company name
+  *@param nombreEmpleado Employee name
+  *@return Building info
   */
-  public String showBuildingX(String nombre3,String nombreEmpleado){
+  public String sZ(String nombre3,String nombreEmpleado){
     String msj = "";
 
     for(int i = 0; i < companies.size();i++){
       if(companies.get(i).getName().equals(nombre3)){
 
-      msj += companies.get(i).getBu().espiralXfila(nombreEmpleado);
+        msj += companies.get(i).getBu().enZ(nombreEmpleado);
 
       }
     }

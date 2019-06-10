@@ -23,6 +23,17 @@ public class ServiceC extends Company{
     return sS;
   }
 
+  /** Description: el promedio en general
+  *@return int la relacion costo por beneficio
+  */
+  public int p3(){
+    int rela = 0;
+    for(int i = 0; i < sS.size();i++){
+      rela += sS.get(i).getRelationCostXBenefit();
+    }
+    return rela;
+  }
+
   /**
   * Description This method allows to change all the ArrayList. <br>
   * <b>post:</b> The Arraylist is changed.
@@ -34,6 +45,17 @@ public class ServiceC extends Company{
 
   public void addSS(ArrayList<SSurvey> client){
     sS = client;
+  }
+
+  /** Description: el promedio final sobre 50
+  *@return int el promedio
+  */
+  public int p5(){
+    int finalPolls1 = 0;
+
+    finalPolls1 = (p1() + p2() + p3()) / 50;
+
+    return finalPolls1;
   }
 
   /**
@@ -50,11 +72,12 @@ public class ServiceC extends Company{
 
 
   }
-
   return msj;
-
   }
 
+  /** Description:This method allows to get the company information
+  *@return Company information
+  */
   public String toString(){
   String msj = "";
 
@@ -77,7 +100,7 @@ public class ServiceC extends Company{
   msj += "---------------------------------------------------------------------------------------------------------------------------- \n";
   msj += "El nombre legal es:" + getLRName();
   msj += "---------------------------------------------------------------------------------------------------------------------------- \n";
-  msj += "El promedio de las encuestas es:" + promediateOfThis();
+  msj += "El promedio de las encuestas es:" + p1();
   msj += "---------------------------------------------------------------------------------------------------------------------------- \n";
 
   return msj;
@@ -88,7 +111,7 @@ public class ServiceC extends Company{
   /** Description: el promedio en general
   *@return int el servicio
   */
-  public int promediateOfThis(){
+  public int p1(){
 
     int ser = 0;
     for(int i = 0; i < sS.size();i++){
@@ -102,7 +125,7 @@ public class ServiceC extends Company{
   /** Description: el promedio en general
   *@return int el tiempo de respuesta
   */
-  public int promediateOfThis1(){
+  public int p2(){
   int ans = 0;
   for(int i = 0; i < sS.size();i++){
     ans += sS.get(i).getAnswerTime();
@@ -111,37 +134,16 @@ public class ServiceC extends Company{
   return ans;
   }
 
-  /** Description: el promedio en general
-  *@return int la relacion costo por beneficio
-  */
-  public int promediateOfThis2(){
-    int rela = 0;
-    for(int i = 0; i < sS.size();i++){
-      rela += sS.get(i).getRelationCostXBenefit();
-    }
-    return rela;
-  }
 
   /** Description: el promedio final sobre 10
   *@return int el promedio
   */
-  public int promediateFinal(){
+  public int p4(){
     int finalPolls = 0;
 
-    finalPolls = (promediateOfThis() + promediateOfThis1() + promediateOfThis2()) / 10;
+    finalPolls = (p1() + p2() + p3()) / 10;
 
     return finalPolls;
-  }
-
-  /** Description: el promedio final sobre 50
-  *@return int el promedio
-  */
-  public int promediateFinal1(){
-    int finalPolls1 = 0;
-
-    finalPolls1 = (promediateOfThis() + promediateOfThis1() + promediateOfThis2()) / 50;
-
-    return finalPolls1;
   }
 
 }//Final

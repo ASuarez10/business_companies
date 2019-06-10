@@ -22,6 +22,11 @@ public class Manufacturing extends Company{
     return products;
   }
 
+  /**
+  * Description This method allows to change the Arraylist. <br>
+  * <b>post:</b> The Arraylist is changed.
+  * @param The new ArrayList.
+  */
   public void setProducts(ArrayList<Product> products){
     this.products = products;
   }
@@ -47,8 +52,9 @@ public class Manufacturing extends Company{
   return msj;
   }
 
-
-
+  /** Description:This method allows to get the company information
+  *@return Company information
+  */
   public String toString(){
   String msj = "";
 
